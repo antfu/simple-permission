@@ -1,0 +1,39 @@
+{
+  "name": "simple-permission",
+  "version": "0.0.1",
+  "description": "A simple permission checker",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "ava": "tsc && nyc ava",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist",
+    "test": "npm run lint && npm run ava",
+    "release": "np",
+    "lint": "tslint -c tslint.json -p tsconfig.json --exclude node_modules/**",
+    "watch": "tsc -w",
+    "watch:test": "tsc -w & ava --watch"
+  },
+  "keywords": [],
+  "author": "Anthony Fu<anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/antfu/simple-permission.git",
+  "bugs": "https://github.com/antfu/simple-permission/issues",
+  "homepage": "https://github.com/antfu/simple-permission#readme",
+  "engines": {
+    "node": ">=4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.19",
+    "ava": "^0.21.0",
+    "np": "^2.16.0",
+    "nyc": "^11.1.0",
+    "rimraf": "^2.6.1",
+    "tslint": "^5.5.0",
+    "tslint-config-standard": "^6.0.1",
+    "typescript": "^2.4.2"
+  }
+}

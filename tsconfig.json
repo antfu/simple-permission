@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "dist",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "declaration": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "listFiles": false,
+    "traceResolution": false,
+    "pretty": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "node_modules/**",
+    "dist"
+  ],
+  "compileOnSave": false
+}
